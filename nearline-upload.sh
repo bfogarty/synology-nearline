@@ -12,5 +12,5 @@ do
 done
 
 date +"[%D %T] Hyper Backup is idle, beginning sync..."
-BOTO_CONFIG=$NEARLINE_HOME/.boto $NEARLINE_HOME/gsutil -m rsync -r -d $source $destination
+BOTO_CONFIG=$NEARLINE_HOME/.boto $NEARLINE_HOME/gsutil/gsutil -m rsync -r -d $source $destination
 date +"[%D %T] Sync completed successfully."
